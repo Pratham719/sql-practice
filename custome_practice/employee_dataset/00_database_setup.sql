@@ -1,0 +1,65 @@
+-- CREATE DATABASE company_db;
+
+-- USE company_db;
+
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    gender VARCHAR(10),
+    age INT,
+    department VARCHAR(50),
+    job_title VARCHAR(50),
+    salary INT,
+    experience_years INT,
+    city VARCHAR(50),
+    joining_date DATE,
+    performance_score INT,
+    bonus INT,
+    email VARCHAR(100),
+    employment_status VARCHAR(20)
+);
+
+INSERT INTO employees VALUES
+(1,'John','Smith','Male',28,'IT','Developer',65000,3,'New York','2022-03-15',8,5000,'john1@email.com','Active'),
+(2,'Emma','Brown','Female',32,'HR','Manager',72000,6,'London','2019-07-20',9,8000,'emma2@email.com','Active'),
+(3,'Michael','Davis','Male',25,'Sales','Executive',45000,2,'Chicago','2023-01-10',7,3000,'michael3@email.com','Active'),
+(4,'Sophia','Wilson','Female',29,'Finance','Analyst',58000,4,'Boston','2021-05-12',8,6000,'sophia4@email.com','Active'),
+(5,'David','Taylor','Male',40,'IT','Architect',95000,12,'Seattle','2015-11-01',10,15000,'david5@email.com','Active'),
+(6,'Olivia','Martinez','Female',35,'Marketing','Coordinator',54000,7,'San Francisco','2018-09-23',8,7000,'olivia6@email.com','Active'),
+(7,'James','Anderson','Male',45,'Operations','Supervisor',88000,15,'Houston','2010-02-18',9,12000,'james7@email.com','Active'),
+(8,'Ava','Thomas','Female',27,'Design','UX Designer',61000,4,'Los Angeles','2021-11-05',8,5500,'ava8@email.com','Active'),
+(9,'Daniel','Moore','Male',31,'IT','System Admin',72000,8,'Toronto','2017-06-14',9,9000,'daniel9@email.com','Active'),
+(10,'Mia','Clark','Female',26,'Sales','Associate',47000,3,'Miami','2022-08-30',7,3500,'mia10@email.com','Active'),
+(11,'Lucas','Hall','Male',34,'Finance','Consultant',82000,9,'Denver','2016-04-22',9,11000,'lucas11@email.com','Active'),
+(12,'Isabella','Young','Female',30,'HR','Recruiter',60000,5,'London','2020-02-11',8,6500,'isabella12@email.com','Active'),
+(13,'Ethan','King','Male',38,'IT','Project Manager',93000,11,'New York','2014-07-19',9,14000,'ethan13@email.com','Active'),
+(14,'Charlotte','Scott','Female',29,'Marketing','Specialist',57000,4,'Boston','2021-03-08',8,6000,'charlotte14@email.com','Active'),
+(15,'Henry','Green','Male',41,'Operations','Director',105000,14,'Chicago','2012-09-25',10,16000,'henry15@email.com','Active'),
+(16,'Amelia','Adams','Female',33,'Finance','Advisor',75000,7,'Seattle','2018-05-14',9,9000,'amelia16@email.com','Active'),
+(17,'Benjamin','Nelson','Male',36,'Sales','Manager',86000,10,'Houston','2015-12-01',9,12000,'benjamin17@email.com','Active'),
+(18,'Harper','Carter','Female',28,'Design','Graphic Designer',62000,3,'Los Angeles','2022-04-10',8,5000,'harper18@email.com','Active'),
+(19,'Alexander','Mitchell','Male',35,'IT','Engineer',78000,8,'Toronto','2017-08-19',9,9500,'alex19@email.com','Active'),
+(20,'Ella','Perez','Female',27,'HR','Assistant',48000,2,'Miami','2023-02-14',7,3500,'ella20@email.com','Active'),
+(21,'Jack','Roberts','Male',39,'Finance','Controller',92000,12,'Denver','2014-11-30',9,13000,'jack21@email.com','Active'),
+(22,'Grace','Turner','Female',31,'Marketing','Lead',69000,6,'London','2019-06-22',8,8000,'grace22@email.com','Active'),
+(23,'William','Phillips','Male',42,'Operations','Coordinator',87000,13,'Chicago','2013-01-18',9,12500,'will23@email.com','Active'),
+(24,'Chloe','Campbell','Female',29,'Design','Product Designer',64000,5,'Boston','2020-09-09',8,6000,'chloe24@email.com','Active'),
+(25,'Matthew','Evans','Male',37,'IT','Consultant',91000,10,'Seattle','2016-12-05',9,13500,'matt25@email.com','Active'),
+(26,'Scarlett','Edwards','Female',34,'Finance','Planner',77000,8,'Houston','2017-03-21',9,9500,'scarlett26@email.com','Active'),
+(27,'Joseph','Collins','Male',30,'Sales','Representative',56000,4,'Los Angeles','2021-07-15',8,6000,'joseph27@email.com','Active'),
+(28,'Victoria','Stewart','Female',28,'HR','Coordinator',52000,3,'Toronto','2022-05-19',7,4500,'victoria28@email.com','Active'),
+(29,'Samuel','Morris','Male',44,'Operations','Manager',98000,15,'Miami','2010-10-12',10,15000,'sam29@email.com','Active'),
+(30,'Lily','Rogers','Female',26,'Design','UI Designer',60000,2,'Denver','2023-03-01',8,5000,'lily30@email.com','Active'),
+(31,'Andrew','Reed','Male',33,'IT','Developer',74000,7,'London','2018-08-17',9,8500,'andrew31@email.com','Active'),
+(32,'Zoe','Cook','Female',35,'Finance','Analyst',80000,9,'Chicago','2016-05-11',9,10000,'zoe32@email.com','Active'),
+(33,'Ryan','Morgan','Male',29,'Sales','Executive',59000,4,'Boston','2020-11-23',8,6500,'ryan33@email.com','Active'),
+(34,'Layla','Bell','Female',27,'Marketing','Coordinator',56000,3,'Seattle','2022-07-14',8,5000,'layla34@email.com','Active'),
+(35,'Nathan','Murphy','Male',40,'Operations','Supervisor',94000,12,'Houston','2014-04-09',9,13500,'nathan35@email.com','Active'),
+(36,'Aria','Bailey','Female',32,'Design','UX Researcher',67000,6,'Los Angeles','2019-01-29',8,7000,'aria36@email.com','Active'),
+(37,'Christopher','Rivera','Male',36,'IT','Architect',99000,11,'Toronto','2015-06-18',10,14500,'chris37@email.com','Active'),
+(38,'Madison','Cooper','Female',30,'HR','Manager',73000,7,'Miami','2018-10-05',9,8500,'madison38@email.com','Active'),
+(39,'Joshua','Ward','Male',28,'Finance','Analyst',62000,3,'Denver','2022-01-12',8,5000,'josh39@email.com','Active'),
+(40,'Emily','Brooks','Female',33,'Marketing','Specialist',71000,8,'London','2017-09-20',9,9000,'emily40@email.com','Active');
+
+
