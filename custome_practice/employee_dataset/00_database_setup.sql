@@ -1,6 +1,6 @@
--- CREATE DATABASE company_db;
+CREATE DATABASE company_db;
 
--- USE company_db;
+USE company_db;
 
 CREATE TABLE employees (
     employee_id INT PRIMARY KEY,
@@ -61,5 +61,3 @@ INSERT INTO employees VALUES
 (38,'Madison','Cooper','Female',30,'HR','Manager',73000,7,'Miami','2018-10-05',9,8500,'madison38@email.com','Active'),
 (39,'Joshua','Ward','Male',28,'Finance','Analyst',62000,3,'Denver','2022-01-12',8,5000,'josh39@email.com','Active'),
 (40,'Emily','Brooks','Female',33,'Marketing','Specialist',71000,8,'London','2017-09-20',9,9000,'emily40@email.com','Active');
-
-
