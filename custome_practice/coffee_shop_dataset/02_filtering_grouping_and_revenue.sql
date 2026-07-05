@@ -67,11 +67,26 @@ on p.product_id=o.product_id
 group by store_location
 
 -- Q17 — Display customers whose total spending exceeds ₹1000.
+select c.customer_id,c.customer_name,sum(o.quantity * p.price ) as total_spending
+from orders o
+join products p
+on o.product_id=p.product_id
+join customers c
+on c.customer_id=o.customer_id
+group by c.customer_id
+having total_spending>1000
+
+
 -- Q26 — Find categories where average product price exceeds ₹180.
+select p.category,round(avg(p.price),2) as average_price
+from products p
+join orders o
+on o.product_id = p.product_id
+group by p.category
+having average_price > 180
+
 -- Q27 — Show customer cities sorted by total quantity purchased.
-
-select * from customers
-
-select * from products
-
-select * from orders
+select o.store_location,sum(o.quantity) as total_quantity
+from orders o
+group by store_location 
+order by total_quantity desc
